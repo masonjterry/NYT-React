@@ -1,0 +1,28 @@
+{
+  "name": "nyt-react",
+  "version": "1.0.0",
+  "description": "New York Times React App",
+  "main": "index.js",
+  "scripts": {
+    "server": "node server.js",
+    "client": "node scripts/start-client.js",
+    "start": "concurrently \"nodemon server.js\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masonjterry/NYT-React.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masonjterry/NYT-React/issues"
+  },
+  "homepage": "https://github.com/masonjterry/NYT-React#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "nodemon": "^1.14.11"
+  }
+}
