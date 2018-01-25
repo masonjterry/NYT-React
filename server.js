@@ -8,6 +8,10 @@ const PORT = process.env.PORT || 3001;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static("client/build"));
+
+app.get("*", function(req, res) {
+  res.sendFile(path.join(__dirname, "index"));
+});
 // app.use(routes);
 
 mongoose.Promise = global.Promise;
