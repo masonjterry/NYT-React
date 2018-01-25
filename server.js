@@ -13,7 +13,7 @@ app.use(express.static("client/build"));
 mongoose.Promise = global.Promise;
 
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/nytreact");
+  process.env.MONGODB_URI || "mongodb://heroku_0p76l345:hr8u7fvf67m7b2om59mnr248jb@ds215388.mlab.com:15388/heroku_0p76l345");
 
 app.listen(PORT, function() {
   console.log(`Listening on ${PORT}!`);
