@@ -20,7 +20,7 @@ export default class Articles extends React.Component {
   render() {
     return (
       <div style={style.divStyle}>
-        <h3 style={style.elementStyle}>{this.props.heading}</h3>
+        <h3 style={style.elementStyle}>{this.props.title}</h3>
         <p style={style.elementStyle}>{this.props.summary}</p>
         <a href={this.props.link}><p style={style.elementStyle}>{this.props.link}</p></a>
         {/*<button style={style.elementStyle} onClick={this.handleClick} className="btn btn-secondary">Save Article</button>*/}
